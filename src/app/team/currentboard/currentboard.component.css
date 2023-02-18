@@ -1,0 +1,12 @@
+.parent{
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    position: relative;
+}
+
+.child1{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}

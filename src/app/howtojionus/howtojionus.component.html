@@ -1,0 +1,41 @@
+<div class="container">
+    <form class="form-container" [formGroup]="joinForm">
+        <div class="row">
+            <label>Your Name</label>
+            <br>
+            <input type="text" formControlName="name"/>
+        </div>
+        <div class="row">
+            <label>Your Email</label>
+            <br>
+            <input type="email" formControlName="email"/>
+        </div>
+        <div class="row">
+            <label>Your Mobile Number</label>
+            <br>
+            <input type="text" formControlName="mobile"/>
+        </div>
+        <div class="row">
+            <label>Profession</label>
+            <br>
+            <input type="text" formControlName="profession"/>
+        </div>
+        <div class="row">
+            <label>Company</label>
+            <br>
+            <input type="text" formControlName="company"/>
+        </div>
+        <div class="row">
+            <label>Area</label>
+            <br>
+            <input type="text" formControlName="area"/>
+        </div>
+        <div class="row" id="check">
+            <input id="box" type="checkbox" formControlName="privacyCheckbox"/>
+            <span>I have read and understood the Privacy Policy and the Terms & Conditions </span>
+        </div>
+        <div class="row">
+            <button class="btn" type="submit">GET INVITED</button>
+        </div>
+    </form>
+</div>

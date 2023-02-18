@@ -1,0 +1,38 @@
+<div class="header-container show"  id="headerId">
+    <div class="header">
+        <div class="logo-container">
+            <img id="logo" src="../../../../assets/images/logo.png" />
+        </div>
+        <label id="menuBtn" for="click"><img id="menu-img" src="../../../../assets/images/menu.png" /></label>
+        <input type="checkbox" id="click">
+        <div class="menu-container">
+
+            <div class="menubar">
+                <div class="menu-item"><a (click)="closeSubmenu()" class="links" routerLink="/home" routerLinkActive="active">Home</a></div>
+                <div class="menu-item"><a (click)="closeSubmenu()" class="links" routerLink="aboutus"  routerLinkActive="active">About Us</a></div>
+                <div class="menu-item"><a (click)="closeSubmenu()" class="links" routerLink="gallery"  routerLinkActive="active">Gallery</a></div>
+                <div class="menu-item">
+                    <a class="links" (click)="openSubmenu()"   routerLinkActive="active">Our Team</a>
+                    <div class="sub-menu" [ngStyle]="{ 'display' : showSubmenu ? 'flex' : 'none'}">
+                        <a class="links" (click)="closeSubmenu()" routerLink="team/promoters" routerLinkActive="active">Promoters</a>
+                        <a class="links" (click)="closeSubmenu()" routerLink="team/currentboard" routerLinkActive="active">Current Board</a>
+                    </div>
+                </div>
+                <div class="menu-item"><a (click)="closeSubmenu()" class="links" routerLink="howtojoin"  routerLinkActive="active">How To Join Us</a></div>
+                <div class="menu-item"><a (click)="closeSubmenu()" class="links" routerLink="contactus"  routerLinkActive="active">Contact Us</a></div>
+            </div>
+            <!-- <span id="vertical-line"></span>
+            <div class="social">
+                <a><img id="social-icons" src="../../assets/images/twitter.png" /></a>
+                <a><img id="social-icons" src="../../../../assets/images/facebook.png" /></a>
+                <a><img id="social-icons" src="../../../../assets/images/google.png" /></a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="title" *ngIf="title">
+    <h1>{{ title }}</h1>
+    <div class="path">
+        <a routerLink="/">Home</a>
+    </div>
+</div>

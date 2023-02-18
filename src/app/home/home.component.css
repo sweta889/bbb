@@ -1,0 +1,272 @@
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.imageStyle{
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.arrow1{
+    position: absolute;
+    left: 0;
+    top: 35vh;
+}
+
+.arrow2{
+    position: absolute;
+    right: 0;
+    top: 35vh;
+}
+
+.firstLine{
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt2{
+    color: white;
+}
+
+.secondLine{
+    font-size: 25px;
+    text-align: center;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+}
+.menuBtn{
+    display: none;
+}
+
+.menubar{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links{
+    color: #232742;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.links:hover{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.active{
+    color: white;
+    font-weight: 600;
+}
+
+.main-body{
+    background-color: white;
+    margin: 20px 80px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    background-color: #232742;
+    width: 100%;
+    color: #02c3d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-header{
+    text-decoration: underline;
+    text-decoration-color: #02c3d5;
+    font-size: 30px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards{
+    background-color: lightcyan;
+    width: 30%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+
+    /* box-shadow: 5px 5px 5px #232742; */
+}
+
+.cards:hover{
+    background-color: white;
+    box-shadow: 5px 5px 10px #02c3d5;
+    border: 2px solid #02c3d5;
+    transition: 0.3s ease all;
+}
+
+.card2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    /* border: 1px solid #b3f8fe; */
+    /* box-shadow: 1px 1px #e6fdff; */
+}
+
+.card2:hover{
+    box-shadow: 5px 5px 10px #e6fdff;
+    border: none;
+}
+
+.card-label{
+    color: #232742;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-icon{
+    width: 20%;
+}   
+
+.content1{
+    display: flex;
+    flex-direction: row;
+}
+
+.para{
+    line-height: 2;
+    font-size: 20px;
+}
+
+/* #text-header{
+    position: relative;
+    left : 610px;
+} */
+
+.img1{
+    width: 40%;
+}
+
+.img2{
+   height: 50%;
+   width: 50%;
+}
+
+.newpara{
+    line-height: 2;
+    font-size: 20px;
+}
+
+@media (max-width : 420px){
+    .logo {
+        margin-left: 0px;
+    }
+
+    .img1{
+        width: 100%;
+    }
+
+    .content1{
+        flex-direction: column;
+    }
+
+    .firstLine{
+        font-size: 30px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .secondLine{
+        font-size: 16px;
+    }
+
+    .menuBtn{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .l1, .l2, .l3{
+        display: block;
+        height: 5px;
+        width: 30px;
+        margin: 5px 0px;
+        border-radius: 2.5px;
+        background-color: white;
+    }
+
+    .menubar{
+        display: none;
+    }
+
+    #check:checked+.menubar{
+        display: flex;
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-body{
+        margin: 20px;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .cards{
+        width: calc(100% - 10px);
+        height: 500px;
+    }
+
+    .card2{
+        width: 100%;
+        padding: 0;
+    }
+
+    .txt2{
+        font-size: 35px;
+    }
+
+    .img2{
+        width: 100%;
+    }
+
+    .header-content{
+        margin-top: 50px;
+    }
+
+
+}
